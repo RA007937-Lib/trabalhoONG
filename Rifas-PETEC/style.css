@@ -1,0 +1,317 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF3DF;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #70452E;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D99A56;
+}
+
+.logo {
+    background-color: #FFF3DF;
+    color: #70452E;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+/* Banner */
+.banner {
+    background-color: #E9D3B8;
+    height: 250px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.banner:hover {
+    box-shadow: 0 5px 12px #0002;
+}
+
+/* Blocos principais */
+.blocos {
+    display: flex;
+    gap: 20px;
+    margin: 25px;
+}
+
+.blocos div {
+    flex: 1;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.doacao {
+    background-color: #A8B99A;
+}
+
+.projetos {
+    background-color: #D99A56;
+}
+
+.adocao {
+    background-color: #E9D3B8;
+}
+
+/* Rifas */
+.rifas {
+    background-color: #E9D3B8;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rifa {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.foto-rifa {
+    background-color: #FFF3DF;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-rifa {
+    text-align: left;
+}
+
+.titulo-numeros {
+    margin-top: 30px;
+}
+
+.legenda {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.legenda span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legenda i {
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.livre {
+    background-color: white;
+    border: 1px solid #70452E;
+}
+
+.escolhido {
+    background-color: #A8B99A;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.numero {
+    background-color: white;
+    border: 1px solid #70452E;
+    padding: 15px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.numero:hover {
+    transform: translateY(-3px);
+}
+
+.numero.selecionado {
+    background-color: #A8B99A;
+    border: 2px solid #70452E;
+    font-weight: bold;
+}
+
+.resumo-rifa {
+    background-color: white;
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+.resumo-rifa button {
+    background-color: #70452E;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.resumo-rifa button:hover {
+    background-color: #56331F;
+}
+
+#mensagem-rifa {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Sobre */
+.sobre {
+    margin: 25px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.titulo {
+    background-color: #E9D3B8;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.fotos {
+    background-color: white;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.sobre:hover {
+    box-shadow: 0 5px 12px #0002;
+}
+
+/* Parte de baixo */
+.inferior {
+    display: flex;
+    gap: 20px;
+    margin: 25px;
+}
+
+.inferior div {
+    flex: 1;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.voluntario {
+    background-color: #A8B99A;
+}
+
+.doar {
+    background-color: #D99A56;
+}
+
+.apoiadores {
+    background-color: #E9D3B8;
+}
+
+/* Efeito ao passar o mouse */
+.blocos div:hover,
+.inferior div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px #0002;
+}
+
+/* Rodapé */
+footer {
+    background-color: #70452E;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+footer:hover {
+    background-color: #56331F;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .blocos,
+    .inferior {
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 180px;
+    }
+
+    .rifa {
+        flex-direction: column;
+    }
+
+    .foto-rifa {
+        width: 100%;
+    }
+
+    .numeros {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

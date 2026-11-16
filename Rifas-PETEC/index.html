@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG de Animais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Doação</a>
+            <a href="#">Parceiros</a>
+
+            <div class="logo">LOGO</div>
+
+            <a href="#">Projetos</a>
+            <a href="#rifas">Rifas</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>BANNER PRINCIPAL</h1>
+    </section>
+
+    <section class="blocos">
+        <div class="doacao">DOAÇÃO</div>
+        <div class="projetos">PROJETOS</div>
+        <div class="adocao">ADOÇÃO</div>
+    </section>
+
+    <section class="rifas" id="rifas">
+        <h2>RIFAS</h2>
+
+        <div class="rifa">
+            <div class="foto-rifa">FOTO DO PRÊMIO</div>
+
+            <div class="info-rifa">
+                <h3>Rifa solidária</h3>
+                <p>Prêmio: a definir</p>
+                <p>Valor de cada número: R$ 5,00</p>
+            </div>
+        </div>
+
+        <h3 class="titulo-numeros">Escolha seus números</h3>
+
+        <div class="legenda">
+            <span><i class="livre"></i> Disponível</span>
+            <span><i class="escolhido"></i> Selecionado</span>
+        </div>
+
+        <div class="numeros" id="numeros"></div>
+
+        <div class="resumo-rifa">
+            <p>Números escolhidos: <strong id="quantidade">0</strong></p>
+            <p>Valor total: <strong id="total">R$ 0,00</strong></p>
+
+            <button onclick="confirmarRifa()">Confirmar números</button>
+
+            <p id="mensagem-rifa"></p>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <div class="titulo">SOBRE</div>
+        <div class="fotos">ÁREA DAS FOTOS</div>
+    </section>
+
+    <section class="inferior">
+        <div class="voluntario">SEJA VOLUNTÁRIO</div>
+        <div class="doar">DOAÇÃO</div>
+        <div class="apoiadores">APOIADORES DIGITAIS</div>
+    </section>
+
+    <footer>
+        <span>FOOTER</span>
+        <span>LOGO</span>
+        <span>MENU</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
